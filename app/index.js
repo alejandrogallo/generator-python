@@ -57,7 +57,7 @@ var PythonGenerator = yeoman.generators.Base.extend({
     this.mkdir('tools');
 
     this.copy('_gitignore', '.gitignore');
-    this.copy('Makefile', 'Makefile');
+    copyTemplate('Makefile', 'Makefile');
     this.copy('MANIFEST.in', 'MANIFEST.in');
     copyTemplate('README.rst', 'README.rst');
     this.copy('requirements.txt', 'requirements.txt');

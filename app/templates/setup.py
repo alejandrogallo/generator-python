@@ -23,7 +23,7 @@ def requireModules(moduleNames=None):
     commentPattern = re.compile(r'^\w*?#')
     moduleNames.extend(
         filter(lambda line: not commentPattern.match(line), 
-            open('requirements.txt').readlines()))
+            open('requirements.rst').readlines()))
 
     return moduleNames
 
