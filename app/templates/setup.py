@@ -28,22 +28,25 @@ def requireModules(moduleNames=None):
     return moduleNames
 
 setup(
-    name='<<<APP_NAME>>>',
-    version=version,
+    name    = '<<<APP_NAME>>>',
+    version = version,
 
-    author='<<<AUTHOR_NAME>>>',
-    author_email='<<<AUTHOR_EMAIL>>>',
+    author       = '<<<AUTHOR_NAME>>>',
+    author_email = '<<<AUTHOR_EMAIL>>>',
+    url          = "http://github.com/<<<AUTHOR_EMAIL>>>/<<<APP_NAME>>>",
 
-    description='<<<APP_DESCRIPTION>>>',
-    long_description=open('README.txt').read(),
-    classifiers=[
+    description      = '<<<APP_DESCRIPTION>>>',
+    long_description = open('README.txt').read(),
+    classifiers      = [
         'Development Status :: 2 - Pre-Alpha',
         'Intended Audience :: Developers'
     ],
 
-    install_requires=requireModules([
+    scripts          = [],
+    install_requires = requireModules([
 
     ]),
 
-    test_suite='<<<APP_NAME>>>'
+    test_suite = '<<<APP_NAME>>>',
+    zip_sage   = False
 )

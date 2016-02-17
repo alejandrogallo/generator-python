@@ -1,3 +1,18 @@
+install-dev:
+	python setup.py develop --user
+install-local:
+	python setup.py install --user
+install:
+	python setup.py install
+test:
+	python setup.py test
+doc-html:
+	make -C doc/ html
+update-gh-pages:
+	@echo "Warning: Black magic in action"
+	git push origin `git subtree split --prefix doc/build/html/ master`:gh-pages --force
+
+
 .PHONY: deps
 
 all: deps

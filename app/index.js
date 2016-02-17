@@ -27,12 +27,12 @@ var PythonGenerator = yeoman.generators.Base.extend({
       type: 'input',
       name: 'AUTHOR_NAME',
       message: "What is the author's name?",
-      default: "Chris Lyon"
+      default: "Alejandro Gallo"
     }, {
       type: 'input',
       name: 'AUTHOR_EMAIL',
       message: "What is the author's email address?",
-      default: "flushot@gmail.com"
+      default: "alejandroamsg@gmail.com"
     }];
 
     this.templateVals.APP_NAME = this.appName;
@@ -54,13 +54,12 @@ var PythonGenerator = yeoman.generators.Base.extend({
 
     this.mkdir(this.appName);
     this.mkdir(this.appName + '/test');
-    this.mkdir('.idea');
-    this.mkdir('bin');
+    this.mkdir('tools');
 
     this.copy('_gitignore', '.gitignore');
     this.copy('Makefile', 'Makefile');
     this.copy('MANIFEST.in', 'MANIFEST.in');
-    copyTemplate('README.txt', 'README.txt');
+    copyTemplate('README.rst', 'README.rst');
     this.copy('requirements.txt', 'requirements.txt');
     copyTemplate('setup.py', 'setup.py');
     copyTemplate('_app.iml', this.appName + '.iml');

@@ -1,4 +1,4 @@
-# generator-python [![Build Status](https://secure.travis-ci.org/flushot/generator-python.png?branch=master)](https://travis-ci.org/flushot/generator-python)
+# generator-python
 
 > [Yeoman](http://yeoman.io) generator
 

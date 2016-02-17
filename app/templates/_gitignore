@@ -1,11 +1,9 @@
-*.pyc
-*.pyo
-*.DS_Store
+/**/*.pyc
+/**/*.pyc
+/**/*.DS_Store
 *.log
-#*#
 Thumbs.db
 /*.egg-info/
 /build/
 /dist/
-/.idea/
 /.venv/
