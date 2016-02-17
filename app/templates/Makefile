@@ -14,7 +14,7 @@ update-gh-pages:
 	@echo "Warning: Black magic in action"
 	git push origin `git subtree split --prefix doc/build/html/ master`:gh-pages --force
 init-sphinx:
-	sphinx-quickstart --no-batchfile --project <<<APP_NAME>>> --author <<<AUTHOR_NAME>>> --makefile --ext-autodoc
+	sphinx-quickstart --no-batchfile --project "<<<APP_NAME>>>" --author "<<<AUTHOR_NAME>>>" --makefile --ext-autodoc
 
 .PHONY: deps
 
